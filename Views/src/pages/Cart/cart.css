@@ -1,0 +1,103 @@
+table {
+  width: 100%;
+  margin: 15px 0 15px 0;
+}
+
+th, td {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+th{
+  border-top: 2px solid black;
+}
+
+main{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button{
+  cursor: pointer;
+}
+
+.box{
+  margin: 10px 0 0px 10px;
+  padding: 10px;
+  width: 80%;
+}
+
+.title { 
+  margin-bottom: 15px;
+  font-size: 24px; 
+  font-weight: 600;
+  color: #4e5968;
+}
+
+
+/* 전체적인 폼 */
+#payment-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#productTable{
+  text-align: center;
+}
+
+.item_total{
+  font-size: 20px;
+  font-weight: bolder;
+  /* text-align: center; */
+}
+
+/* 버튼 */
+.btnBox{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.a_btn,.btn{
+  width: 200px;
+  height: 70px;
+  background: #F0F0F0;
+  font-weight: bolder; 
+  border-radius:12px; 
+  font-size: 17px; 
+  border:none; 
+  margin:0px 5px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.a_btn:hover,.btn:hover{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.441);
+  background-color: rgba(128, 128, 128, 0.399);
+}
+
+.minus, .plus{
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 13px;
+}
+
+.deleteBtn{
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.item_many{
+  border: none;
+  text-align: center;
+  width: 50px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>화사해 - Hwasahae</title>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <link rel="stylesheet" href="/src/components/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="/src/components/navbar.js"></script>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <header class="header"></header>
+    <main>
+      <section>
+        <!-- Slider main container -->
+        <div class="swiper mySwiper main_banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <!-- 김나영이 2023.11.11 배너 이미지 변경함 -->
+              <img src="./img/banner1.jpg" alt="" style="width: 100%;" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner2.jpg" alt="" style="width: 100%;" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner3.jpg" alt="" style="width: 100%;" />
+            </div>
+          </div>
+          <div class="swiper-button-next main_swiper-button-next"></div>
+          <div class="swiper-button-prev main_swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section>
+        <div class="swiper21">
+          <div class="main_pro_title01 cboth"><strong>MD추천</strong></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="prd-list">
+                <table summary="상품이미지, 상품 설명, 가격">
+                  <colgroup>
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                    <col width="25%" />
+                  </colgroup>
+                  <tbody>
+                    <tr class="main_md_item"></tr>
+                    <tr></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bast_item">
+        <div class="main_pro_title01 cboth"><strong>베스트 상품</strong></div>
+        <div class="swiper2 cboth">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide swiper2_tabbox01"
+              style="display: block"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer></footer>
+  <!-- html 로딩된후에 스크립트가 로딩되야함 따로설정하면 헤드에 가능 -->
+</html>

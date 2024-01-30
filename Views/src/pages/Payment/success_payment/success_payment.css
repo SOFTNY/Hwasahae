@@ -1,0 +1,47 @@
+.success_payment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+h1 {
+  color: #333;
+  margin-top: 100px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: 100;
+}
+
+button{
+  width: 320px;
+  height: 60px;
+  font-size: 15px;
+  line-height: 58px;
+  border-radius: 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  background: #e4e4e4;
+  margin-bottom: 130px;
+}
+
+button:hover{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.441);
+  background-color: rgba(128, 128, 128, 0.399);
+}
+
+#orderNumber{
+  font-weight: bold;
+}
+
+.content{
+  text-align: center;
+  margin-bottom: 20px;
+}

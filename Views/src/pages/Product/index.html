@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/pages/Product/product.css">
+  <link rel="stylesheet" type="text/css" href="/components/navbar.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./product.js" defer></script>
+</head>
+
+<body>
+  <header class="header"></header>
+  <main>
+    <div id="content">
+      <div id="productClass">
+        <div class="prd-class-hd width1260">
+          <dl class="loc-navi">
+            <dt class="blind">현재위치</dt>
+            <dd>
+              <a href="/">HOME</a>
+              >
+              <a href="/">상품</a>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="page-body">
+          <div class="cate-wrap">
+            <div class="cboth">
+              <img src="./img/cboth.jpg">
+            </div>
+            <div class="bcate text-3xl font-semibold">상품</div>
+            <div class="class-list width1260">
+              <ul class="list mb-10">
+                  <!-- 카테고리 로드 되는 공간 -->
+              </ul>
+            </div>
+          </div>
+          <div class="item-wrap width1260 cboth">
+            <div class="item-info">
+              <dl class="item-order sort float-right">
+                <dt class="blind">검색결과 정렬</dt>
+              </dl>
+            </div>
+            <div class="timedeal_box">
+              <div class="prd-list mx-auto my-0">
+                <div class="product-container">
+                <!-- 상품로드되는 공간 -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="../../components/navbar.js"></script>
+</body>
+</html>

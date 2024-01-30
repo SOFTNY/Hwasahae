@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>회원가입</title>
+  <!-- js -->
+  <script defer src="/components/navbar.js"></script>
+  <script defer src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <script defer src="/js/adressApi.js"></script>
+  <script type="module" defer src="/pages/SIgnUp/signUp.js"></script>
+  <script type="module" defer src="/pages/SIgnUp/validation.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/pages/SIgnUp/signUp.css" />
+  <link rel="stylesheet" href="/components/navbar.css" />
+</head>
+
+<body>
+  <!--header-->
+  <header class="header"></header>
+
+  <!-- signUp -->
+  <main class="signUp">
+    <form action="/register" method="POST" encType="multipart/form-data">
+      <div class="form-white">
+        <h1 class="title">회원정보 입력</h1>
+
+        <!-- 이름 -->
+        <div class="w-100">
+          <div>
+            <label for="name" class="detail_title">이름</label>
+            <input class="form-input" type="text" id="name">
+          </div>
+        </div>
+
+        <!-- 이메일 -->
+        <div class="w-100">
+          <div>
+            <label for="email" class="detail_title">이메일</label>
+            <input class="form-input" type="email" id="email" placeholder="email@naver.com">
+            <p class="msg" id="email-message"></p>
+          </div>
+        </div>
+
+        <!-- 비밀번호 -->
+        <div class="w-100">
+          <div>
+            <label for="pwd" class="detail_title">비빌번호</label>
+            <input class="form-input" type="password" id="pwd">
+            <p class="msg" id="pw-message"></p>
+          </div>
+        </div>
+
+        <!-- 비밀번호 확인 -->
+        <div class="w-100">
+          <div>
+            <label for="rePwd" class="detail_title">비밀번호 확인</label>
+            <input class="form-input" type="password" id="rePwd">
+            <p class="msg" id="confirmPw-message"></p>
+          </div>
+        </div>
+
+        <!-- 주소 -->
+        <div class="w-100">
+          <div>
+            <label for="address" class="detail_title">주소</label>
+            <div>
+              <input type="text" id="sample4_postcode" placeholder="우편번호">
+              <input type="button" class="btn" id="addressBtn" onclick="sample4_execDaumPostcode()" value="우편번호 찾기">
+              <input type="text" class="address-input" id="sample4_roadAddress" placeholder="도로명주소">
+              <input type="text" class="address-input" id="sample4_jibunAddress" placeholder="지번주소">
+              <span id="guide" style="color:#999;display:none"></span>
+              <input type="text" class="address-input" id="sample4_detailAddress" placeholder="상세주소">
+              <input style="visibility: hidden;" type="text" class="address-input" id="sample4_extraAddress" placeholder="참고항목">
+            </div>
+          </div>
+        </div>
+
+        <!-- 구매자&관리자 option -->
+        <!-- <div class="info">
+          <p>구매자인지 관리자인지 선택해주세요</p>
+          <select class="form-input" id="role">
+            <option>구매자</option>
+            <option>관리자</option>
+          </select>
+        </div> -->
+
+        <!-- 회원가입 버튼 -->
+        <div class="w-100">
+          <button type="submit" class="btn openModalButton" id="submit" value="회원가입">회원가입</button>
+        </div>
+    </form>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer></footer>
+</body>
+
+</html>

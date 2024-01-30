@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <header class="header"></header>
+    <!-- js -->
+    <script defer type="module" src="/src/pages/SignIn/signIn.js"></script>
+    <script defer type="module" src="/src/pages/SignIn/validation.js"></script>
+    <script defer src="/src/components/navbar.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/pages/SignIn/signIn.css" />
+    <link rel="stylesheet" href="/src/components/navbar.css" />
+  </head>
+
+  <body>
+    <!--header-->
+    <header class="header"></header>
+    <!-- signIn -->
+    <main class="signIn">
+      <form action="/login" method="POST" enctype="multipart/form-data">
+        <div class="containerLogin">
+          <div class="signInForm">
+            <h3>회원 로그인</h3>
+            <input
+              type="email"
+              id="email"
+              placeholder="이메일을 입력해주세요."
+            />
+            <p class="msg" id="email-message"></p>
+            <input
+              type="password"
+              placeholder="비밀번호를 입력해주세요."
+              id="pwd"
+            />
+            <p id="pw-message" class="msg"></p>
+            <button id="login-btn">로그인</button><br />
+            <!-- <input type="checkbox" />보안접속 -->
+          </div>
+
+          <!-- <div class="signUpForm">
+            <h3>회원가입</h3> -->
+            <!-- 회원가입 버튼 -->
+            <!-- <p class="explain">
+              아직 회원이 아니신가요?<br />
+              회원가입을 하시면 다양한 혜택을 편리하게 이용하실 수 있습니다.
+            </p>
+            <button id="joinUs-btn" onclick="signUpLink()">
+              <a style="color: black" href="/register">회원가입</a></button
+            ><br /> -->
+            <!-- 아이디/비번 찾기 버튼 -->
+            <!-- <p class="explain">
+              아이디 혹은 비밀번호를 잊으셨나요?<br />
+              간단한 정보를 입력 후 잃어버린 정보를 찾으실 수 있습니다.
+            </p>
+            <button id="findIdPw-btn">
+              <a style="color: black" href="/find">아이디/비번 찾기</a></button
+            ><br /> -->
+            <!-- 비회원 구매 버튼 -->
+            <!-- <p class="explain">
+            비회원 구매를 원하세요?<br>
+            아래버튼으로 연결 후 비회원 구매가 가능합니다.
+          </p>
+          <button id="nonMember"><a style="color: black;" href="/payment/">비회원 구매</a></button><br> -->
+          <!-- </div>
+        </div>
+        <div style="clear: both"></div>
+      </form> -->
+
+      <!-- <div class="socialBtn">
+        <button>카카오 로그인</button>
+        <button>네이버 로그인</button>
+      </div> -->
+    </main>
+    <!--footer-->
+    <footer></footer>
+  </body>
+</html>

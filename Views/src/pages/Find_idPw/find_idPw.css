@@ -1,0 +1,66 @@
+main{
+  margin-top: 50px;
+}
+
+.containerLogin{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(213, 213, 213);
+}
+
+.signInForm, .signUpForm{
+  float: left;
+  padding: 30px;
+  margin: 10px 30px 10px 10px; 
+}
+
+.explain{
+  font-size: 12px;
+  color: rgb(68, 68, 68);
+  margin-top: 10px;
+}
+
+input[type="text"],input[type="tel"], input[type="email"]{
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius:10px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+
+button{
+  width: 320px;
+  height: 60px;
+  font-size: 15px;
+  line-height: 58px;
+  border-radius: 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.441);
+  background-color: rgba(128, 128, 128, 0.399);
+}
+
+.socialBtn{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+form{
+  margin: 50px 0 35px 0;
+}
+
+.socialBtn{
+  margin: 30px 0 50px 0;
+}

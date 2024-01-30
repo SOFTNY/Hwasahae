@@ -1,0 +1,168 @@
+table {
+  width: 100%;
+  margin: 15px 0 15px 0;
+}
+
+th, td {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+th{
+  border-top: 2px solid black;
+}
+
+main{
+  margin-top: 70px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box{
+  margin: 10px 0 0px 10px;
+  padding: 10px;
+  width: 80%;
+}
+
+.title { 
+  margin-bottom: 15px;
+  font-size: 24px; 
+  font-weight: 600;
+  color: #4e5968;
+}
+
+button{
+  cursor: pointer;
+}
+
+
+/* 주문 리스트 */
+#orderTable {
+  text-align: center;
+}
+
+#productTable{
+  text-align: center;
+}
+
+
+/* 주문자 테이블 */
+#customerTable input[type="email"], input[type="tel"]{
+  width: 50%;
+  height: 40px;
+  padding: 6px;
+  margin: 5px;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius:10px;
+  font-size: 15px;
+}
+.input-text{
+  width: 50%;
+  height: 40px;
+  padding: 6px;
+  margin: 5px;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius:10px;
+  font-size: 15px;
+}
+
+/* 배송 정보 */
+.infoSame-box{
+  flex-direction: row-reverse;
+  display: flex;
+}
+
+#addressBtn {
+  width: 50%;
+  height: 40px;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius:10px;
+  font-size: 15px;
+  padding: 0px;
+}
+
+#addressBtn:hover{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.441);
+  background-color: rgba(128, 128, 128, 0.399);
+}
+
+
+/* 전체적인 결제폼 */
+/* #payment-form{
+
+} */
+
+/* 전체 상품 가격 */
+#totalPrice {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  /* background: #f2f2f2; */
+  padding: 20px;
+}
+
+
+.totalPayment-table{
+  margin: 50px 0 50px 0;
+}
+
+.totalPayment-table, #totalPrice{
+  text-align: center;
+}
+
+.item_total{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+
+/* 결제 버튼 */
+.btnBox{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.btn{
+  padding:20px; 
+  background: #F0F0F0;
+  font-weight: bolder; 
+  border-radius:12px; 
+  font-size: 25px; 
+  border:none; 
+  margin:30px 10px 30px
+}
+
+.btn:hover{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.441);
+  background-color: rgba(128, 128, 128, 0.399);
+}
+
+.cancelBtn, .paymentBtn{
+  float: left;
+  width: 300px;
+}
+
+.minus, .plus{
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 13px;
+}
+
+.deleteBtn{
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.item_many{
+  border: none;
+  text-align: center;
+  width: 50px;
+}

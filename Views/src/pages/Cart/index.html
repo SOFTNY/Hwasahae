@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>장바구니</title>
+    <!-- js -->
+    <script defer src="/src/pages/Cart/cart.js"></script>
+    <script defer src="/src/components/navbar.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/pages/Cart/cart.css" />
+    <link rel="stylesheet" href="/src/components/navbar.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header"></header>
+    <!-- main -->
+    <main class="cart">
+        <div class="totalPayment box">
+          <span class="title">주문 리스트</span>
+          <table class="totalPayment-table">
+            <thead>
+              <tr>
+                <th>상품 이미지</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+                <th>삭제</th>
+              </tr>
+            </thead>
+            <tbody id="productTable">
+            </tbody>
+            <tbody>
+              <tr>
+                <!-- 총결제 금액 -->
+                <td colspan="5"><span class="item_total" id="totalPrice"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="btnBox">
+          <a id="payment_btn" class="a_btn" style="color: black;" href="/payment">주문하기</a>
+          <a class="a_btn" style="color: black;" href="/">계속 쇼핑하기<a>
+          <button class="btn" id="cartDelete">장바구니 비우기</button>
+        </div>
+        <div style="clear: both;"></div>
+    </main>
+    <!-- footer -->
+    <footer></footer>
+  </body>
+</html>

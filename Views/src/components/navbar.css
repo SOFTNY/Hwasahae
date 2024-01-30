@@ -1,0 +1,208 @@
+header, footer{
+    font-family:'Noto Sans KR','Apple SD Gothic Neo',Sans-serif; 
+}
+.header_section{
+    width: 100%;
+    max-width:1280px;
+    height: 88px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 로그인 회원가입 타원형 버튼 */
+.header_section>div:first-child{
+    width:330px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_section>div:first-child>ul{
+    display: flex;
+}
+.header_section>div:first-child>ul>li{
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    width: 100px;
+    height: 29px;
+    line-height: 29px;
+    letter-spacing: -0.5px;
+    font-weight: normal;
+    border: 1px solid #dedede;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 4px;
+}
+.header_section>div:first-child>ul>li:last-child>a{
+    color: #666;
+}
+.header_section>div:first-child>ul>li:first-child{
+    border: 1px solid #000;
+    background: #000;
+     color:#fff
+}
+.header_section>div:first-child>ul>li:first-child:hover{
+    color: #000;
+    text-align: center;
+    width: 100px;
+    height: 29px;
+    line-height: 29px;
+    letter-spacing: -0.5px;
+    font-weight: normal;
+    border: 1px solid #dedede;
+    background: #fff;
+    border-radius: 20px;
+}
+.header_section>div:first-child>ul>li:first-child:hover>a{
+    color: #000;
+}
+.header_section>div:first-child>ul>li:last-child:hover{
+    color: #000;
+    border: 1px solid #333;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+.header_section>div:nth-child(2){
+    margin-right: 14vw;
+    cursor: pointer;
+}
+/* 헤더 검색폼및 아이콘 */
+.header_right_area{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header_right_area ul{
+    display: flex;
+    align-items: flex-start;
+}
+.header_right_area li:first-child{
+    display:none;
+}
+.header_right_area li{
+    position: relative;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.search_open{
+    position: relative;
+    color: #222;
+    width: 267px;
+    height: 30px;
+    background: #f6f6f6;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_open fieldset{
+    display: flex;
+    border: none;
+}
+.search_open a{
+    margin-top:8px;
+}
+.search_open .MS_search_word{
+    border: 0;
+    background: none;
+    padding: 2px 8px 0 16px;
+    width: 200px;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #888;
+    line-height: 30px;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.MS_search_word::placeholder{
+    color:#979696;
+    font-weight:200;
+    text-indent:0;
+    vertical-align: middle;
+}
+.user_basket_quantity{
+    position: absolute;
+    top: 0;
+    right: -6px;
+    width: 13px;
+    height: 13px;
+    background: #ac1818;
+    color: #fff;
+    font-size: 10px;
+    line-height: 13px;
+    border-radius: 100%;
+    text-align: center;
+}
+/* 네비바 */
+nav{
+    width: 100%;  
+    height: 50px;
+    margin:0 auto;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li{
+    float: left;
+}
+nav li a{
+    font-size: 18px;
+    position: relative;
+    color: #444;
+    display: block;
+    line-height: 50px;
+    word-wrap: normal;
+    text-decoration: none;
+    padding: 0 35px;
+    text-decoration:none;
+}
+nav li a:hover{
+    color: #fff;
+    background-color: #ac1818;
+    font-weight: bold;
+    text-decoration:none;
+    transition: all 0.25s;
+}
+
+/* 푸터 */
+.fleft {float:left;}
+.bt_inner {width:1260px; margin:0 auto; position:relative;display: flex;justify-content: space-between;}
+.ft_sec01 {width:100%; height:36px; line-height:36px; border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0;}
+.ft_sec01 .bt_bar {font-size:11px; color:#777; padding:0 7px;}
+.ft_sec01 li {float:left;}
+.ft_sec01 a {font-size:14px; color:#777;}
+.ft_sec01 a.bk {color:#333;}
+.ft_sec01 a:hover {color:#000;}
+.familySite {position:relative; top:0; right:0px; }
+.familySite select {height:30px; border:0; font-size: 14px; color: #777; }
+.ft_sec02 {text-align:left; height:118px;}
+.ft_sec02 .tit_cs {font-size:14px; color:#000; margin-top:29px; margin-bottom:8px;}
+.ft_sec02 .ft_phone {font-size:33px; font-weight:bold; color:#000;}
+.ft_sec02 .cs_info {font-size:12px; line-height:16px; color:#888; margin:4px 0 0 18px;}
+.ft_sec02 .bank_area {margin-left:83px;}
+.ft_sec02 .tit_bank {font-size:14px; color:#000; margin-top:29px; margin-bottom:8px;}
+.ft_sec02 .bank_info {font-size:12px; line-height:16px; color:#888; margin:4px 0 0 0;}
+.ft_sec02 .return_area {margin-left:80px;}
+.ft_sec02 .tit_return {font-size:14px; color:#000; margin-top:29px; margin-bottom:8px;}
+.ft_sec02 .rt_info {font-size:12px; line-height:16px; color:#888; margin:4px 0 0 0;}
+.ft_sec02 .rt_info span {color:#5c5c5c;}
+.ft_sec03 {height:161px; background:#f8f8f8; width:100%; border-top:1px solid #f0f0f0;}
+.ft_sec03 .com_info {font-size:12px; color:#888; line-height:20px; text-align:left; margin-top:31px;}
+.ft_sec03 .com_info a {color:#888;}
+.ft_sec03 .copyright {font-size:11px; color:#5a5a5a; text-align:left; padding-top:15px; letter-spacing:0.5px;}
+.ft_sec03 .escrow {position:absolute; top:10px; right:0;}
+.ft_sec03 .bt_inner{display: flex;flex-direction: column;}
+
+a {color:#fff; text-decoration: none; outline: none}
+
+/* 로그인 버튼을 호버했을 때 글씨 색이 보이지 않아, 호버했을 경우에 글씨색이 검정색으로 나올 수 있도록 수정 => 2023.11.09_김나영 */
+.header_section > div:first-child > ul > li:first-child:hover a {
+    color: #000; /* a 태그에 대한 스타일 변경 */
+}
