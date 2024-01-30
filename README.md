@@ -84,25 +84,6 @@ $ npm install
 $ npm run preview
 ```
 
-## 🤼‍♂️팀원
-
----
-
-### Backend
-
-최윤혁 ( johan43311@gmail.com ) - team leader
-
-이다현 (dada4202@gmail.com)
-
-### FrontEnd
-
-최하림 (zing10555@gmail.com) - team leader
-
-천비전 (visionmdl520@gmail.com)
-
-김나영 (a01026069588@gmail.com)
-
-이다은  (eun000221@gmail.com)
 
 ## 🏃 아쉬웠던 점 및 목표
 
